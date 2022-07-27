@@ -1,5 +1,6 @@
 {% set name = "libdate" %}
 {% set version = "3.0.1" %}
+{% set sha256 = "7a390f200f0ccd207e8cff6757e04817c1a0aec3e327b006b7eb451c57ee3538" %}
 
 
 package:
@@ -8,7 +9,7 @@ package:
 
 source:
   url: https://github.com/HowardHinnant/date/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 7a390f200f0ccd207e8cff6757e04817c1a0aec3e327b006b7eb451c57ee3538
+  sha256: {{ sha256 }}
 
 build:
   number: 0
@@ -30,6 +31,12 @@ about:
   summary: A date and time library based on the C++11/14/17 <chrono> header
   license: MIT
   license_file: LICENSE.txt
+  license_family: MIT
+  description: |
+    A date and time library based on the C++11/14/17 <chrono> header
+  doc_url: https://github.com/HowardHinnant/date/blob/master/README.md
+  doc_source_url: https://github.com/HowardHinnant/date/blob/master/README.md
+  dev_url: https://github.com/HowardHinnant/date 
 
 extra:
   recipe-maintainers:
