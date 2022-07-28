@@ -14,18 +14,15 @@ source:
 build:
   number: 0
   run_exports:
-    strong:
-      - libcurl
+    - libcurl
 
 requirements:
-  host:
+  build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - cmake
     - ninja
-  build:
-    - libcurl
-  run:
+  host:
     - libcurl
 
 test:
