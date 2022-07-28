@@ -13,6 +13,9 @@ source:
 
 build:
   number: 0
+  run_exports:
+    strong:
+      - libcurl
 
 requirements:
   host:
