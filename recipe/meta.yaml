@@ -15,11 +15,15 @@ build:
   number: 0
 
 requirements:
-  build:
+  host:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - cmake
     - ninja
+  build:
+    - libcurl
+  run:
+    - libcurl
 
 test:
   commands:

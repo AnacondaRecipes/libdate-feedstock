@@ -2,6 +2,6 @@
 
 md build
 pushd build
-cmake -DCMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX% -GNinja ..
+cmake -DENABLE_DATE_TESTING=ON -DBUILD_TZ_LIB=ON -DCMAKE_INSTALL_PREFIX=%PREFIX% -GNinja ..
 ninja install
 popd
